@@ -1,0 +1,209 @@
+.checkout-modal .modal-content {
+  border: 1px solid var(--color-gold-light);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Header */
+.checkout-modal-header {
+  background-color: var(--color-navy);
+  border-bottom: 1px solid var(--color-gold-dark);
+  padding: 1rem 1.5rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.checkout-modal-header .btn-close {
+  filter: invert(1) brightness(0.7);
+}
+
+.checkout-modal-title {
+  font-family: Georgia, serif !important;
+  color: #fff !important;
+  font-size: 1.1rem !important;
+}
+
+/* Step indicator */
+.checkout-steps {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-left: auto;
+  margin-right: 0.5rem;
+}
+
+.checkout-step {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  opacity: 0.45;
+}
+
+.checkout-step.active,
+.checkout-step.done {
+  opacity: 1;
+}
+
+.checkout-step-dot {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-color: var(--color-gold-muted);
+  color: #fff;
+  font-size: 0.7rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.checkout-step.active .checkout-step-dot {
+  background-color: var(--color-gold-dark);
+}
+
+.checkout-step.done .checkout-step-dot {
+  background-color: #4a7c59;
+}
+
+.checkout-step-label {
+  color: #ccc;
+  font-size: 0.78rem;
+  letter-spacing: 0.06em;
+}
+
+.checkout-step.active .checkout-step-label {
+  color: var(--color-gold-light);
+}
+
+/* Body */
+.checkout-modal-body {
+  background-color: var(--color-cream);
+  padding: 1.75rem 1.75rem 1.25rem;
+}
+
+.checkout-section-title {
+  font-family: Georgia, serif;
+  color: var(--color-navy);
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--color-gold-light);
+}
+
+/* Form inputs */
+.checkout-label {
+  font-size: 0.78rem !important;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-gold-muted) !important;
+  margin-bottom: 0.3rem !important;
+}
+
+.checkout-optional {
+  text-transform: none;
+  font-size: 0.72rem;
+  color: #aaa;
+}
+
+.checkout-input {
+  background-color: #fff !important;
+  border: 1px solid var(--color-gold-light) !important;
+  color: var(--color-navy) !important;
+  font-size: 0.9rem !important;
+  border-radius: 4px !important;
+}
+
+.checkout-input::placeholder {
+  color: #bbb !important;
+}
+
+.checkout-input:focus {
+  box-shadow: 0 0 0 0.2rem rgba(200, 169, 110, 0.25) !important;
+  border-color: var(--color-gold-dark) !important;
+}
+
+/* Billing same-address */
+.checkout-same-check .form-check-input:checked {
+  background-color: var(--color-gold-dark);
+  border-color: var(--color-gold-dark);
+}
+
+.checkout-same-check .form-check-label {
+  font-size: 0.9rem;
+  color: var(--color-navy);
+}
+
+.checkout-same-address-preview {
+  background-color: #fff;
+  border: 1px solid var(--color-gold-light);
+  border-radius: 4px;
+  padding: 0.9rem 1.1rem;
+  color: var(--color-navy);
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+.checkout-same-address-preview p {
+  margin: 0;
+}
+
+/* Order total row (step 3) */
+.checkout-order-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.5rem;
+  padding: 0.9rem 1rem;
+  background-color: #fff;
+  border: 1px solid var(--color-gold-light);
+  border-radius: 4px;
+  font-family: Georgia, serif;
+  color: var(--color-navy);
+  font-size: 0.95rem;
+}
+
+.checkout-total-amount {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--color-gold-dark);
+}
+
+/* Footer */
+.checkout-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.75rem;
+  padding-top: 1rem;
+  border-top: 1px solid #ddd;
+}
+
+.checkout-back-btn {
+  background: none;
+  border: none;
+  color: var(--color-gold-muted);
+  font-size: 0.85rem;
+  cursor: pointer;
+  padding: 0;
+  text-decoration: underline;
+}
+
+.checkout-back-btn:hover {
+  color: var(--color-gold-dark);
+}
+
+.checkout-next-btn {
+  background-color: var(--color-gold-dark) !important;
+  border-color: var(--color-gold-dark) !important;
+  color: #fff !important;
+  font-family: Georgia, serif !important;
+  padding: 0.5rem 2rem !important;
+  letter-spacing: 0.04em !important;
+  transition: background-color 0.2s, border-color 0.2s !important;
+}
+
+.checkout-next-btn:hover {
+  background-color: var(--color-gold-light) !important;
+  border-color: var(--color-gold-light) !important;
+}

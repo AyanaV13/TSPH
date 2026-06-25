@@ -1,0 +1,322 @@
+.cart-page {
+  background-color: var(--color-cream);
+  min-height: 100vh;
+}
+
+/* Hero */
+.cart-hero {
+  background-color: var(--color-navy);
+  padding: 2.5rem 0 2rem;
+  text-align: center;
+}
+
+.cart-heading {
+  font-family: Georgia, serif;
+  color: #fff;
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.cart-subheading {
+  color: var(--color-gold-light);
+  font-size: 0.9rem;
+  letter-spacing: 0.1em;
+  margin: 0;
+}
+
+/* Body */
+.cart-body {
+  padding-top: 2.5rem;
+  padding-bottom: 4rem;
+}
+
+/* Item list */
+.cart-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  border: 1px solid var(--color-gold-light);
+  border-radius: 6px;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  padding: 1.25rem;
+  border-bottom: 1px solid #f0ebe0;
+}
+
+.cart-item:last-child {
+  border-bottom: none;
+}
+
+.cart-item-img {
+  width: 80px;
+  height: 80px;
+  min-width: 80px;
+  background-color: #e8e2d8;
+  border-radius: 4px;
+  border: 1px solid var(--color-gold-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  color: var(--color-gold-muted);
+}
+
+.cart-item-info {
+  flex: 1;
+}
+
+.cart-item-title {
+  font-family: Georgia, serif;
+  color: var(--color-navy);
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+}
+
+.cart-item-price {
+  color: var(--color-gold-muted);
+  font-size: 0.85rem;
+  margin: 0;
+}
+
+/* Quantity controls */
+.cart-item-controls {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.5rem;
+}
+
+.cart-qty-control {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  border: 1px solid var(--color-gold-light);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.cart-qty-btn {
+  background: #fff;
+  border: none;
+  width: 42px;
+  height: 42px;
+  font-size: 1.2rem;
+  color: var(--color-navy);
+  cursor: pointer;
+  transition: background-color 0.15s;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cart-qty-btn:hover {
+  background-color: var(--color-cream);
+}
+
+.cart-qty-value {
+  min-width: 42px;
+  text-align: center;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--color-navy);
+  border-left: 1px solid var(--color-gold-light);
+  border-right: 1px solid var(--color-gold-light);
+  padding: 0 0.5rem;
+  line-height: 42px;
+}
+
+.cart-item-line-total {
+  font-family: Georgia, serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--color-navy);
+  margin: 0;
+}
+
+.cart-remove-btn {
+  background: none;
+  border: none;
+  color: var(--color-gold-muted);
+  font-size: 0.75rem;
+  cursor: pointer;
+  padding: 0;
+  text-decoration: underline;
+}
+
+.cart-remove-btn:hover {
+  color: var(--color-gold-dark);
+}
+
+/* Back link */
+.cart-back-link {
+  margin-top: 1.25rem;
+}
+
+.cart-link {
+  color: var(--color-gold-dark);
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.cart-link:hover {
+  color: var(--color-gold-light);
+  text-decoration: underline;
+}
+
+/* Order summary */
+.cart-summary {
+  background-color: #fff;
+  border: 1px solid var(--color-gold-light);
+  border-radius: 6px;
+  padding: 1.5rem;
+  position: sticky;
+  top: 1rem;
+}
+
+.cart-summary-heading {
+  font-family: Georgia, serif;
+  color: var(--color-navy);
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--color-gold-light);
+}
+
+.cart-summary-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  color: var(--color-navy);
+  margin-bottom: 0.6rem;
+}
+
+.cart-ship-note {
+  font-size: 0.75rem;
+  color: var(--color-gold-muted);
+  margin-top: -0.25rem;
+  margin-bottom: 0.6rem;
+}
+
+.cart-free-ship {
+  color: #4a7c59;
+  font-weight: 600;
+}
+
+.cart-summary-divider {
+  border-top: 1px solid var(--color-gold-light);
+  margin: 0.75rem 0 1rem;
+}
+
+.cart-summary-total {
+  font-family: Georgia, serif;
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+}
+
+/* Buttons */
+.cart-btn-primary {
+  background-color: var(--color-gold-dark) !important;
+  border-color: var(--color-gold-dark) !important;
+  color: #fff !important;
+  font-family: Georgia, serif !important;
+  letter-spacing: 0.04em !important;
+  transition: background-color 0.2s, border-color 0.2s !important;
+}
+
+.cart-btn-primary:hover {
+  background-color: var(--color-gold-light) !important;
+  border-color: var(--color-gold-light) !important;
+}
+
+.cart-checkout-btn {
+  width: 100%;
+  padding: 0.65rem !important;
+}
+
+/* Empty state */
+.cart-empty {
+  text-align: center;
+  padding: 5rem 1rem;
+}
+
+.cart-empty-heading {
+  font-family: Georgia, serif;
+  color: var(--color-navy);
+  font-size: 1.6rem;
+  margin-bottom: 0.75rem;
+}
+
+.cart-empty-text {
+  color: var(--color-gold-muted);
+  margin-bottom: 2rem;
+}
+
+/* Confirmation */
+.cart-confirmation {
+  display: flex;
+  justify-content: center;
+  padding: 5rem 1rem;
+}
+
+.cart-confirmation-box {
+  text-align: center;
+  max-width: 420px;
+}
+
+.cart-confirmation-icon {
+  width: 64px;
+  height: 64px;
+  background-color: var(--color-gold-dark);
+  color: #fff;
+  font-size: 1.8rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+}
+
+.cart-confirmation-heading {
+  font-family: Georgia, serif;
+  color: var(--color-navy);
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+.cart-confirmation-text {
+  color: var(--color-gold-muted);
+  font-size: 0.95rem;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+}
+
+/* You might also like */
+.cart-recommendations {
+  background-color: #fff;
+  border-top: 2px solid var(--color-gold-light);
+  padding: 3rem 0 3.5rem;
+  margin-top: 2rem;
+}
+
+.cart-recommendations-heading {
+  font-family: Georgia, serif;
+  color: var(--color-navy);
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 1.75rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--color-gold-light);
+  display: inline-block;
+}

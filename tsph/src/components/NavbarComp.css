@@ -1,0 +1,11 @@
+.nav-submit-link {
+  font-style: italic;
+}
+
+.nav-submit-link.active-submit {
+  color: var(--color-gold-light) !important;
+}
+
+.nav-submit-link:hover {
+  color: var(--color-gold-light) !important;
+}

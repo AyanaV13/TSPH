@@ -1,0 +1,121 @@
+.features-page {
+  background-color: var(--color-cream);
+  min-height: 100vh;
+}
+
+.features-hero {
+  background-color: var(--color-navy);
+  padding: 3rem 0 2.5rem;
+  text-align: center;
+}
+
+.features-eyebrow {
+  color: var(--color-gold-light);
+  font-size: 0.85rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.features-heading {
+  font-family: Georgia, serif;
+  color: #fff;
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.features-subheading {
+  font-family: Georgia, serif;
+  color: var(--color-gold-light);
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+.features-description {
+  color: #aaa;
+  font-size: 0.95rem;
+  max-width: 520px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+.features-grid-section {
+  padding: 3rem 0 4rem;
+}
+
+/* Spotlight override — no top padding gap between grid and dark section */
+.features-spotlight {
+  padding-top: 2.5rem;
+  padding-bottom: 3rem;
+}
+
+.features-spotlight-cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 2rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid #252f42;
+}
+
+.features-spotlight-cta-text {
+  color: #aaa;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.features-spotlight-cta-link {
+  color: var(--color-gold-light);
+  font-family: Georgia, serif;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.features-spotlight-cta-link:hover {
+  color: #fff;
+}
+
+/* Add to Cart button */
+.add-to-cart-btn {
+  background-color: var(--color-gold-dark) !important;
+  border-color: var(--color-gold-dark) !important;
+  color: #fff !important;
+  font-family: Georgia, serif !important;
+  font-size: 0.85rem !important;
+  letter-spacing: 0.04em !important;
+  width: 100%;
+  transition: background-color 0.2s, border-color 0.2s !important;
+}
+
+.add-to-cart-btn:hover {
+  background-color: var(--color-gold-light) !important;
+  border-color: var(--color-gold-light) !important;
+}
+
+.add-to-cart-btn.added {
+  background-color: var(--color-navy) !important;
+  border-color: var(--color-navy) !important;
+}
+
+/* Card meta (pieces / difficulty) */
+.product-card-meta {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.product-card-badge {
+  font-size: 0.7rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 0.2rem 0.5rem;
+  border-radius: 3px;
+  background-color: var(--color-cream);
+  color: var(--color-gold-muted);
+  border: 1px solid var(--color-gold-light);
+}
